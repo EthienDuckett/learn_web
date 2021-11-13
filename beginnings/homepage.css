@@ -1,9 +1,18 @@
 body {
 	background-color:gray;
 }
-
 div {
 	display:inline-block;
+}
+
+.top_quote {
+	padding-left:10px;
+}
+#left_side_bar {
+	text-align:center;
+}
+ul {
+	text-align:left;
 }
 
 

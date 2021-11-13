@@ -3,7 +3,7 @@ This isn't a project, this is just me trying to learn some design, maybe interfa
 
 ## How?
 I will be using these traditional web-development tools first: HTML, CSS, and JavaScript.
-Later on, I might try SASS and coffeescript
+Later on, I might try SASS and JQUERY
 
 ## Why?
 My design skills are worthless, also these aren't really projects, more like gists, so I can finish them fast.
@@ -12,3 +12,4 @@ My design skills are worthless, also these aren't really projects, more like gis
 Remind me to not get too cozy with web-development because there are more important things than it, like higher mathematics, systems design, and people I guess.
 Improve my own speed: If JavaScript isn't faster than Adobe products and other click-and-design tools, then what is the point in coding at all?
 Improve readability: By strategically layering designs/categories, it should be possible to focus a person on particular points of a webpage and to more quickly transmit information (because they know where to look)
+Learn more about VScode/electronJS.
