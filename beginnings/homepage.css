@@ -1,0 +1,20 @@
+body {
+	background-color:gray;
+}
+
+div {
+	display:inline-block;
+}
+
+
+#right_side_bar {
+	right:0px;
+	position:absolute;
+	width:50px;
+}
+.dot {
+	display:block;
+	position:relative;
+	color:white;
+	font-size:40px;
+}
