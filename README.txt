@@ -13,3 +13,4 @@ Remind me to not get too cozy with web-development because there are more import
 Improve my own speed: If JavaScript isn't faster than Adobe products and other click-and-design tools, then what is the point in coding at all?
 Improve readability: By strategically layering designs/categories, it should be possible to focus a person on particular points of a webpage and to more quickly transmit information (because they know where to look)
 Learn more about VScode/electronJS.
+Figure out when OOP is necessary.
