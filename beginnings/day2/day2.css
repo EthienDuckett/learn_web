@@ -1,0 +1,22 @@
+h1 {
+	font-size: 12rem;
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align:center;
+	margin-bottom:72px;
+
+	border-bottom: 15px dotted gray;
+}
+p#p1 {
+	text-align:center;
+	margin:auto;
+	line-height: 1.5em;
+	font: small-caption;
+	max-width:400px;
+
+	padding:0 40px;
+	border-bottom: 10px solid transparent;
+	/* https://css-tricks.com/gradient-borders-in-css/ states "Using both border-image and border-image-slice is probably the easiest possible syntax for a gradient border, it’s just incompatible with border-radius, unfortunately." */
+	border-image: linear-gradient(#eee, #333) 80 stretch;
+}
