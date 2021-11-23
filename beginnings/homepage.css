@@ -14,11 +14,16 @@ div {
 ul {
 	text-align:left;
 }
+table {
+	border-collapse:collapse;
+}
 th {
 	border-right: 1px solid white;
 }
-td {
+td, td > a {
 	padding-left:20px;
+	color: black;
+	font-weight:bold;
 }
 
 
