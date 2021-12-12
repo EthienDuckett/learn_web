@@ -5,8 +5,48 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tunnel Vision</title>
+	<link rel="stylesheet" href="styles.css">
+	<script>
+/*
+Inspired by:
+https://github.com/SheepTester/thingkingland/blob/master/coders/dragTest.html
+https://nerdparadise.com/programming/javascriptmouseposition
+*/
+	function move(div,mouseEvent)
+	{
+	var obj = document.getElementById("body");
+	var obj_left = 0;
+	var obj_top = 0;
+	var xpos;
+	var ypos;
+	while (obj.offsetParent)
+	{
+		obj_left += obj.offsetLeft;
+		obj_top += obj.offsetTop;
+		obj = obj.offsetParent;
+	}
+	if (mouseEvent)
+	{
+		//FireFox
+		xpos = mouseEvent.pageX;
+		ypos = mouseEvent.pageY;
+	}
+	else
+	{
+		//IE
+		xpos = window.event.x + document.body.scrollLeft - 2;
+		ypos = window.event.y + document.body.scrollTop - 2;
+	}
+	div = document.getElementById("circle");
+  	div.style.left = xpos + 'px';
+	div.style.top = ypos + 'px';
+}
+document.getElementById("body").onmousemove = move;
+	</script>
 </head>
-<body>
-	
+<body id="body">
+	<div class="black"></div>
+	<div class="circle" id="circle" style="top:0px;left:0px;"></div>
+	<div class=""></div>
 </body>
 </html>
