@@ -41,12 +41,14 @@ https://nerdparadise.com/programming/javascriptmouseposition
   	div.style.left = xpos + 'px';
 	div.style.top = ypos + 'px';
 }
-document.getElementById("body").onmousemove = move;
 	</script>
 </head>
-<body id="body">
+<body id="body" onmousemove="move()">
 	<div class="black"></div>
 	<div class="circle" id="circle" style="top:0px;left:0px;"></div>
-	<div class=""></div>
+	<div class="black-things">
+		<h1></h1>
+
+	</div>
 </body>
 </html>
