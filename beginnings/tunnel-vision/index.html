@@ -7,12 +7,18 @@
 	<title>Tunnel Vision</title>
 	<link rel="stylesheet" href="styles.css">
 	<script>
+		var color = "black";
+		var colors = {"black":"white","white":"black"};
+		function toggle(){
+			div = document.getElementById("black");
+			color = colors[color];
+			div.style.backgroundColor = color;
+		}
 /*
-Inspired by:
-https://github.com/SheepTester/thingkingland/blob/master/coders/dragTest.html
+Code excerpts from:
 https://nerdparadise.com/programming/javascriptmouseposition
 */
-	function move(div,mouseEvent)
+	function move(mouseEvent)
 	{
 	var obj = document.getElementById("body");
 	var obj_left = 0;
@@ -44,11 +50,17 @@ https://nerdparadise.com/programming/javascriptmouseposition
 	</script>
 </head>
 <body id="body" onmousemove="move()">
-	<div class="black"></div>
+	<div class="black" id="black"></div>
 	<div class="circle" id="circle" style="top:0px;left:0px;"></div>
 	<div class="black-things">
-		<h1></h1>
-
+		<h1>I want to do more, but it is hard.</h1>
+		<p>I could put a black and white picture here, just make the white transparent, or a maze, or a light up button. I could even make a story. Well, I thought I could, but here I am with tunnel vision.</p>
+		<p>Maybe I am conflicted because I don't know what to express. One reason is my father--who I do not want to talk to--might see this at some point. Another is that I didn't feel prepared for public scrutiny.</p>
+		<img src="gimp.png" alt="">
+		<img src="bell_pepper.png" alt="">	
+		<!-- section 2 -->
+		<h1>revert</h1>
+		<p>message: I found some motivation.<button onclick="toggle();">Toggle light</button></p>
 	</div>
 </body>
 </html>
