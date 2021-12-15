@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+html {
+	--list-subheader-selection-text-color:black;
+}
+body {
+	margin:0;
+}
+#header {
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:10;
+	background-color:#4F47B3;
+	color:white;
+	width:100%;
+	min-height:4em;
+	text-align:left;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+#header>div> h1 {
+	z-index:11;
+	font-family:"Abril Fatface", "Helvetica Neue", Arial;
+}
+#header>div> button {
+	background-color:unset;
+	border:unset;
+	color:white;
+	font-size:2em;
+}
+#header>div> input {
+	width:unset;
+}
