@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 html {
-	--list-subheader-selection-text-color:black;
+	/* declare 'variables' here */
 }
 body {
 	margin:0;
@@ -33,4 +33,57 @@ body {
 }
 #header>div> input {
 	width:unset;
+}
+#header-margin {
+	margin-top:16em;
+}
+
+.items-rectangle {
+	width:100%;
+	height:fit-content;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+/* I looked at some bootstrap samples, and I decided to try copy them */
+.item {
+	display:inline-flex;
+	width:20%;
+	height:30%;
+	border-bottom:1px solid #4F47B3;
+	flex-direction:column;
+	align-items:center;
+}
+.item> img {
+	max-width:100%;
+	max-height:300px;
+}
+.item:hover {
+	/* insert animation style */
+}
+.item> span {
+	display:inline-block;
+	width:fit-content;
+}
+.item> .stats {
+/* information like seller, reputation/risk/reviews, price */
+}
+/* maybe combine with the one below */
+.item> .actions {
+	height:2em;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+/* I just had a better idea for item-actions. Have them appear when you hover over an item, and also a like/dislike button on the right side. */
+/* Maybe do a single tap to see item-actions on mobile and a double tap to view an item on mobile. */
+/* The see_similar action could show a menu which allows sorting */
+.item> .actions, .item>.actions> div {
+	height:0;
+	visibility:hidden;
+}
+.item:hover> .actions, .item:hover>.actions> div {
+	height:2em;
+	visibility:visible;
 }
