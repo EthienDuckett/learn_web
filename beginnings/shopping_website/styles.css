@@ -43,6 +43,7 @@ body {
 	height:fit-content;
 	display:flex;
 	justify-content:space-around;
+	flex-wrap:wrap;
 }
 /* I looked at some bootstrap samples, and I decided to try copy them */
 .item {
@@ -52,6 +53,7 @@ body {
 	border-bottom:1px solid #4F47B3;
 	flex-direction:column;
 	align-items:center;
+	flex:375px;
 }
 .item:hover {
 	/* insert animation style */
