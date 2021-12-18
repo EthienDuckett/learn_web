@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 html {
 	/* declare 'variables' here */
 }
@@ -49,11 +48,12 @@ body {
 .item {
 	display:inline-flex;
 	width:20%;
-	height:30%;
+	min-height:30%;
 	border-bottom:1px solid #4F47B3;
 	flex-direction:column;
 	align-items:center;
 	flex:375px;
+	font-family: 'Baloo Baijaan', sans-serif, Arial;
 }
 .item:hover {
 	/* insert animation style */
