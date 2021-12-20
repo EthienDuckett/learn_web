@@ -86,10 +86,10 @@ h2 {
 	align-items:center;
 	flex:375px;
 	font-family: 'Baloo Baijaan', sans-serif, Arial;
+	border-left:20px solid white;
+	border-right:20px solid white;
 }
 .item:hover {
-	/* known bug: the expansion of the item can push items off of the same row and potentially every other row after it. */
-	/* known fix: change the margin to permanent instead of the hover pseudo-class */
 	background:lightgrey;
 	border-left:20px solid lightgrey;
 	border-right:20px solid lightgrey;
