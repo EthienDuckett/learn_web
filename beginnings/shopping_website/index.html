@@ -10,13 +10,30 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet"> 
+	<!-- jquery -->
+	<link rel="preconnect" href="ajax.google.com">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#menu_button").click(function(){
+				$("#menu").toggle();
+			})
+		})
+	</script>
 </head>
 <body>
 	<!-- I should probably consider using bootstrap or angular for this... -->
 	<!-- banner/header -->
 	<div id="header">
 		<div><h1>Seers' Shopping</h1></div>
-		<div><button><img src="resources/buttons/menu_white_48dp.svg" alt=""></button></div>
+		<div><button id="menu_button"><img src="resources/buttons/menu_white_48dp.svg" alt=""></button></div>
+	</div>
+	<div id="menu">
+		<ul>
+			<li>Home</li>
+			<li>Check out</li>
+			<li>Log out</li>
+		</ul>
 	</div>
 	<div id="header-margin"></div>
 	<!-- search results, maybe category header -->
@@ -53,7 +70,7 @@
 		<div class="item" id="item-3">
 			<img src="resources/frithia-pulchra.jpg" alt="">
 			<span class="caption"><a href="https://www.flickr.com/photos/stevecorey/4731929390/" target="_blank">Steve Corey</a>, <a href="https://creativecommons.org/licenses/by-nc/2.0" target="_blank">Creative Commons</a></span>
-			<span>This succulent is frithia pulchra. It is a plant native to south Africa...</span>
+			<span>This succulent is frithia pulchra. It is a plant native to South Africa...</span>
 			<div class="stats"></div>
 			<div class="actions">
 				<div><img src='resources/buttons/report_problem_black_24dp.svg'></div>  <div><img src='resources/buttons/visibility_black_24dp.svg'></div>  <div><img src='resources/buttons/favorite_black_24dp.svg'></div>  <div><img src='resources/buttons/add_shopping_cart_black_24dp.svg'></div>

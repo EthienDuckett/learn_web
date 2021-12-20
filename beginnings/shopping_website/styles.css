@@ -29,6 +29,24 @@ body {
 	border:unset;
 	color:white;
 	font-size:2em;
+	z-index:12;
+}
+#menu {
+	position:fixed;
+	top:0px;
+	right:0px;
+	width:fit-content;
+	background-color:#4F47B3;
+	display:none;
+	z-index:11;
+}
+#menu> ul {
+	list-style-type:none;
+	font-weight:bold;
+	color:white;
+	font-size:2em;
+	text-align:center;
+	margin-right:1em;
 }
 #header>div> input {
 	width:unset;
