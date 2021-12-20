@@ -24,21 +24,29 @@ body {
 	z-index:11;
 	font-family:"Abril Fatface", "Helvetica Neue", Arial;
 }
+#header> div {
+	z-index:12;
+}
 #header>div> button {
 	background-color:unset;
 	border:unset;
 	color:white;
 	font-size:2em;
-	z-index:12;
+	
 }
 #menu {
 	position:fixed;
-	top:0px;
+	top:4em;
 	right:0px;
 	width:fit-content;
 	background-color:#4F47B3;
 	display:none;
 	z-index:11;
+	border-bottom-left-radius:3em;
+	word-wrap:break-word;
+	overflow-wrap:break-word;
+	overflow-x:hidden;
+	max-width:50%;
 }
 #menu> ul {
 	list-style-type:none;
@@ -47,6 +55,9 @@ body {
 	font-size:2em;
 	text-align:center;
 	margin-right:1em;
+}
+#menu>ul> li {
+	border-bottom:1px solid white;
 }
 #header>div> input {
 	width:unset;
@@ -77,7 +88,11 @@ h2 {
 	font-family: 'Baloo Baijaan', sans-serif, Arial;
 }
 .item:hover {
-	/* insert animation style */
+	/* known bug: the expansion of the item can push items off of the same row and potentially every other row after it. */
+	/* known fix: change the margin to permanent instead of the hover pseudo-class */
+	background:lightgrey;
+	border-left:20px solid lightgrey;
+	border-right:20px solid lightgrey;
 	/* maybe add a button to show the original image, perhaps a gallery mode */
 }
 .item> img {
