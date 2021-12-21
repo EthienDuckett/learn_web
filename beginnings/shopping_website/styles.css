@@ -110,6 +110,10 @@ h2 {
 }
 .item> .stats {
 /* information like seller, reputation/risk/reviews, price */
+	display:flex;
+	justify-content:space-around;
+	margin-top:auto;
+	width:100%;
 }
 /* maybe combine with the one below */
 .item> .actions {
