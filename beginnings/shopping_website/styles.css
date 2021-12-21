@@ -32,7 +32,6 @@ body {
 	border:unset;
 	color:white;
 	font-size:2em;
-	
 }
 #menu {
 	position:fixed;
@@ -58,6 +57,15 @@ body {
 }
 #menu>ul> li {
 	border-bottom:1px solid white;
+}
+#menu>ul>li> input {
+	background-color:transparent;
+	border:unset;
+	color:white;
+	font-size:1em;
+	/* font-size em is useful */
+	width:100%;
+	text-align:center;
 }
 #header-margin {
 	margin-top:16em;
@@ -111,6 +119,10 @@ h2 {
 	justify-content:space-around;
 	margin-top:auto;
 	width:100%;
+}
+.item>.stats> div {
+	max-width:60%;
+	color:dodgerblue;
 }
 /* maybe combine with the one below */
 .item> .actions {
